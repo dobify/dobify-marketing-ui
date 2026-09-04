@@ -1,0 +1,375 @@
+{
+  "nav": {
+    "features": "Funciones",
+    "howItWorks": "Cómo funciona",
+    "pricing": "Precios",
+    "download": "Descargar"
+  },
+  "hero": {
+    "badge": "Funciona online u offline",
+    "title": "El punto de venta que nunca para de vender",
+    "subtitle": "Dobify es un POS moderno para equipos de retail: inventario, cobros, pagos y reportes multi-sucursal en una sola app.",
+    "cta": "Prueba gratis",
+    "ctaSecondary": "Ver cómo funciona",
+    "rating": "4.8 estrellas de 2,400+ comercios",
+    "tagline": "tu negocio, organizado",
+    "chipSales": "ventas",
+    "chipInventory": "inventario"
+  },
+  "platforms": {
+    "title": "Disponible para",
+    "android": "Android",
+    "ios": "iOS",
+    "web": "Web",
+    "desktop": "Escritorio",
+    "tablet": "Tablet"
+  },
+  "features": {
+    "sectionTitle": "Funciones",
+    "title": "Todo lo que una tienda moderna necesita",
+    "subtitle": "Para equipos con una caja o cincuenta sucursales.",
+    "checkout": {
+      "title": "Cobro rápido",
+      "text": "Registra ventas, aplica descuentos y divide pagos en un checkout diseñado para velocidad."
+    },
+    "inventory": {
+      "title": "Inventario y categorías",
+      "text": "Controla stock por producto y categoría con conteos en tiempo real que se actualizan al vender."
+    },
+    "offline": {
+      "title": "Sincronización offline",
+      "text": "Sigue vendiendo sin internet. Cada transacción se sincroniza automáticamente al reconectarte."
+    },
+    "multiLocation": {
+      "title": "Multi-sucursal",
+      "text": "Maneja una tienda o cincuenta. Administra sucursales, equipo e inventario desde una cuenta."
+    },
+    "team": {
+      "title": "Equipo y roles",
+      "text": "Dale a cada colaborador el nivel de acceso correcto con permisos basados en roles."
+    },
+    "reports": {
+      "title": "Reportes que importan",
+      "text": "Ve ventas, productos top y desempeño por sucursal sin exportar hojas de cálculo."
+    }
+  },
+  "howItWorks": {
+    "sectionTitle": "Cómo funciona",
+    "title": "Listo en tres pasos",
+    "step1": {
+      "title": "Crea tu cuenta",
+      "text": "Regístrate, agrega los datos de tu negocio e invita a tu equipo en minutos."
+    },
+    "step2": {
+      "title": "Agrega productos y sucursales",
+      "text": "Importa o agrega tu catálogo y configura cada caja o sucursal."
+    },
+    "step3": {
+      "title": "Empieza a vender",
+      "text": "Cobra, controla inventario y ve reportes actualizarse en tiempo real."
+    }
+  },
+  "pricing": {
+    "sectionTitle": "Precios",
+    "title": "Precios simples, sin sorpresas",
+    "subtitle": "Empieza gratis. Escala cuando crezcas.",
+    "mostPopular": "Más popular",
+    "downloadCta": "Descargar gratis",
+    "starter": {
+      "name": "Inicial",
+      "price": "$0",
+      "period": "/mes",
+      "item1": "1 sucursal",
+      "item2": "1 caja",
+      "item3": "POS e inventario básico",
+      "item4": "Soporte por email",
+      "cta": "Empezar gratis"
+    },
+    "growth": {
+      "name": "Crecimiento",
+      "price": "$39",
+      "period": "/mes por sucursal",
+      "item1": "Cajas ilimitadas",
+      "item2": "Reportes multi-sucursal",
+      "item3": "Roles y permisos",
+      "item4": "Soporte prioritario",
+      "cta": "Prueba gratis"
+    },
+    "enterprise": {
+      "name": "Empresarial",
+      "price": "Personalizado",
+      "period": "",
+      "item1": "Onboarding dedicado",
+      "item2": "Integraciones custom",
+      "item3": "SLA y soporte prioritario",
+      "item4": "Precios por volumen",
+      "cta": "Contactar ventas"
+    }
+  },
+  "testimonials": {
+    "sectionTitle": "Testimonios",
+    "title": "Amado por comerciantes",
+    "quote1": {
+      "text": "Cambiamos de Square el año pasado. El modo offline nos salvó en un apagón de tres horas — no perdimos una sola venta.",
+      "name": "Sarah Chen",
+      "role": "Dueña, Brightside Books"
+    },
+    "quote2": {
+      "text": "Manejar cuatro tiendas desde un dashboard cambió todo. Reportes que tomaban horas ahora toman segundos.",
+      "name": "Marcus Johnson",
+      "role": "Operaciones, Urban Threads"
+    },
+    "quote3": {
+      "text": "Mi equipo lo aprendió en un día. El cobro es tan rápido que nuestras filas avanzan el doble.",
+      "name": "Elena Rodriguez",
+      "role": "Gerente, Fresh Market Co"
+    }
+  },
+  "faq": {
+    "sectionTitle": "FAQ",
+    "title": "Preguntas frecuentes",
+    "q1": {
+      "question": "¿Dobify funciona sin internet?",
+      "answer": "Sí. Dobify es offline-first — ventas, cambios de inventario y cobros siguen funcionando localmente y se sincronizan automáticamente al reconectarte."
+    },
+    "q2": {
+      "question": "¿En qué dispositivos funciona Dobify?",
+      "answer": "Dobify funciona en Android, iOS, web y escritorio, así que puedes usar tablets, teléfonos o computadoras existentes."
+    },
+    "q3": {
+      "question": "¿Puedo manejar más de una sucursal?",
+      "answer": "Sí. Los planes Crecimiento y Empresarial soportan sucursales ilimitadas con reportes desglosados por tienda."
+    },
+    "q4": {
+      "question": "¿Hay prueba gratis?",
+      "answer": "Todos los planes incluyen 14 días de prueba gratis, sin tarjeta de crédito."
+    },
+    "q5": {
+      "question": "¿Cómo migro desde mi POS actual?",
+      "answer": "Ofrecemos asistencia gratuita de migración. Exporta tus productos como CSV y nuestro equipo te ayuda a importar todo en 24 horas."
+    }
+  },
+  "download": {
+    "title": "¿Listo para empezar a vender?",
+    "subtitle": "Descarga ahora — gratis para una sucursal, siempre.",
+    "note": "Sin tarjeta de crédito. Crea tu cuenta en la app."
+  },
+  "footer": {
+    "tagline": "Punto de venta que sigue vendiendo, online u offline. Hecho para equipos de retail modernos.",
+    "product": "Producto",
+    "platforms": "Plataformas",
+    "stayUpdated": "Mantente informado",
+    "stayUpdatedText": "Recibe novedades y tips para tu negocio.",
+    "subscribe": "Suscribir",
+    "copyright": "© {year} Dobify. Todos los derechos reservados.",
+    "privacy": "Privacidad",
+    "terms": "Términos",
+    "cookies": "Cookies",
+    "support": "Soporte"
+  },
+  "legal": {
+    "backToHome": "Volver al inicio"
+  },
+  "privacy": {
+    "title": "Política de Privacidad",
+    "lastUpdated": "Última actualización: 23 de julio de 2026",
+    "intro": "Bienvenido a Dobify. Esta Política de Privacidad explica cómo recopilamos, utilizamos y protegemos su información cuando utiliza nuestra plataforma de punto de venta (POS) multi-inquilino y servicios relacionados.",
+    "contactText": "¿Preguntas sobre sus derechos de datos?",
+    "section1": {
+      "title": "Información que Recopilamos",
+      "intro": "Para proporcionar nuestros servicios de punto de venta, recopilamos:",
+      "item1": { "label": "Información de la Cuenta:", "text": "Nombre, dirección de correo electrónico, detalles comerciales e información de contacto." },
+      "item2": { "label": "Datos de Transacciones:", "text": "Detalles sobre ventas, productos, inventario y recibos procesados a través de la plataforma." },
+      "item3": { "label": "Datos de Dispositivos y Uso:", "text": "Información sobre el hardware y los sistemas operativos utilizados para acceder a Dobify, para garantizar la compatibilidad y sincronización." }
+    },
+    "section2": {
+      "title": "Cómo Utilizamos su Información",
+      "intro": "Utilizamos la información recopilada para:",
+      "item1": { "label": "", "text": "Operar y mantener su sistema POS y la sincronización de la base de datos." },
+      "item2": { "label": "", "text": "Procesar pagos de forma segura y facilitar los flujos de verificación de comerciantes." },
+      "item3": { "label": "", "text": "Proporcionar soporte técnico y actualizaciones de la plataforma." }
+    },
+    "section3": {
+      "title": "Procesamiento de Pagos y Servicios de Terceros",
+      "intro": "Dobify no almacena directamente información confidencial de tarjetas de crédito en nuestros servidores. Nos asociamos con servicios de terceros seguros:",
+      "item1": { "label": "Stripe y Pasarelas de Pago:", "text": "Utilizamos componentes integrados de Stripe para manejar de forma segura el registro de comerciantes, la verificación y el procesamiento de pagos." },
+      "item2": { "label": "Tap to Pay y Punto de Venta:", "text": "Para transacciones en persona, admitimos funciones de Tap to Pay e integraciones de terminales. Los datos se cifran y transmiten directamente al procesador." },
+      "item3": { "label": "Google Play Services y Apple:", "text": "Utilizados para gestionar lanzamientos de aplicaciones, suscripciones y análisis de la plataforma para usuarios móviles." }
+    },
+    "section4": {
+      "title": "Retención y Eliminación de Datos",
+      "intro": "Tiene el derecho de solicitar la eliminación completa de su cuenta y sus datos personales en cualquier momento.",
+      "howTo": {
+        "label": "Cómo Solicitar la Eliminación",
+        "text": "Puede solicitar la eliminación de la cuenta directamente dentro de la aplicación Dobify en la Configuración de su Cuenta, o enviando un correo a privacy{'@'}dobify.com."
+      },
+      "whatHappens": {
+        "label": "Qué Sucede con sus Datos",
+        "text": "Al recibir una solicitud de eliminación, borraremos permanentemente el perfil de su cuenta, los datos de sus dispositivos y los identificadores personales. Ciertos registros históricos pueden retenerse temporalmente en formato anónimo para cumplir con requisitos legales."
+      }
+    },
+    "section5": {
+      "title": "Seguridad de los Datos",
+      "text": "Implementamos estrictas medidas de seguridad a nivel de arquitectura y bases de datos para proteger su información. Sin embargo, ninguna transmisión electrónica a través de Internet puede garantizarse como completamente segura."
+    },
+    "contact": {
+      "title": "Contáctenos",
+      "text": "Si tiene preguntas sobre esta política o sus derechos de datos, contáctenos en:"
+    }
+  },
+  "terms": {
+    "title": "Términos de Servicio",
+    "lastUpdated": "Última actualización: 16 de agosto de 2026",
+    "intro": "Bienvenido a Dobify. Al acceder o utilizar nuestra plataforma de punto de venta (POS), acepta estar sujeto a estos Términos de Servicio.",
+    "contactText": "¿Preguntas sobre estos términos?",
+    "section1": {
+      "title": "Aceptación de los Términos",
+      "text": "Al crear una cuenta o utilizar los servicios de Dobify, reconoce que ha leído, comprendido y acepta estos términos. Si no está de acuerdo, no podrá utilizar nuestros servicios."
+    },
+    "section2": {
+      "title": "Descripción del Servicio",
+      "text": "Dobify proporciona una plataforma de punto de venta basada en la nube que incluye:",
+      "item1": "Procesamiento de ventas y gestión de transacciones",
+      "item2": "Gestión de inventario y catálogo de productos",
+      "item3": "Gestión de relaciones con clientes",
+      "item4": "Reportes y análisis",
+      "item5": "Procesamiento de pagos a través de proveedores externos"
+    },
+    "section3": {
+      "title": "Registro de Cuenta",
+      "item1": "Debe proporcionar información precisa y completa durante el registro.",
+      "item2": "Es responsable de mantener la confidencialidad de las credenciales de su cuenta.",
+      "item3": "Debe tener al menos 18 años o la edad legal en su jurisdicción para usar Dobify.",
+      "item4": "Una cuenta por entidad comercial; se pueden agregar sub-usuarios a través de la plataforma."
+    },
+    "section4": {
+      "title": "Uso Aceptable",
+      "item1": "No usar Dobify para propósitos ilegales o fraudulentos.",
+      "item2": "No procesar transacciones de bienes o servicios prohibidos según los procesadores de pago.",
+      "item3": "No intentar evadir medidas de seguridad o acceder a datos de otros usuarios.",
+      "item4": "No revender o redistribuir los servicios de Dobify sin autorización."
+    },
+    "section5": {
+      "title": "Pago y Facturación",
+      "item1": "Las tarifas de suscripción se facturan según el plan seleccionado (mensual o anual).",
+      "item2": "Pueden aplicarse tarifas de transacción según el volumen de pagos y el nivel del plan.",
+      "item3": "Todas las tarifas no son reembolsables excepto según lo requiera la ley.",
+      "item4": "Nos reservamos el derecho de modificar los precios con 30 días de anticipación."
+    },
+    "section6": {
+      "title": "Propiedad de los Datos",
+      "item1": "Usted conserva la propiedad de todos los datos que ingresa en Dobify.",
+      "item2": "Nos otorga una licencia para procesar sus datos únicamente para proporcionar el servicio.",
+      "item3": "Podemos generar estadísticas anónimas y agregadas para mejorar el servicio."
+    },
+    "section7": {
+      "title": "Disponibilidad del Servicio",
+      "item1": "Nos esforzamos por mantener un 99.9% de disponibilidad, pero no garantizamos un servicio ininterrumpido.",
+      "item2": "El mantenimiento programado se comunicará con anticipación cuando sea posible.",
+      "item3": "No somos responsables de pérdidas debido a interrupciones fuera de nuestro control."
+    },
+    "section8": {
+      "title": "Servicios de Terceros",
+      "integration1": { "name": "Stripe:", "desc": "Para procesamiento de pagos y servicios comerciales." },
+      "integration2": { "name": "Proveedores de nube:", "desc": "Para almacenamiento y sincronización de datos." },
+      "note": "Su uso de estas integraciones está sujeto a sus respectivos términos."
+    },
+    "section9": {
+      "title": "Terminación",
+      "item1": "Puede cancelar su cuenta en cualquier momento a través de la configuración.",
+      "item2": "Podemos suspender o terminar cuentas que violen estos términos.",
+      "item3": "Tras la terminación, puede solicitar la exportación de sus datos dentro de 30 días."
+    },
+    "section10": {
+      "title": "Limitación de Responsabilidad",
+      "text": "En la máxima medida permitida por la ley, la responsabilidad de Dobify está limitada a las tarifas pagadas en los 12 meses anteriores a cualquier reclamo. No somos responsables de daños indirectos, incidentales o consecuentes."
+    },
+    "section11": {
+      "title": "Cambios a los Términos",
+      "text": "Podemos actualizar estos términos periódicamente. El uso continuado después de los cambios constituye aceptación. Los cambios materiales serán notificados por correo electrónico o notificación en la app."
+    },
+    "section12": {
+      "title": "Ley Aplicable",
+      "text": "Estos términos se rigen por las leyes de México. Las disputas se resolverán en los tribunales de la Ciudad de México."
+    },
+    "contact": {
+      "title": "Contáctenos",
+      "text": "Para preguntas sobre estos términos, contáctenos en:"
+    }
+  },
+  "support": {
+    "title": "Soporte",
+    "subtitle": "Estamos aquí para ayudarte a sacar el máximo provecho de Dobify.",
+    "email": {
+      "title": "Soporte por Email",
+      "text": "Recibe respuesta en 24 horas en días hábiles."
+    },
+    "chat": {
+      "title": "Chat en Vivo",
+      "text": "Chatea con nuestro equipo en horario laboral."
+    },
+    "docs": {
+      "title": "Documentación",
+      "text": "Guías, tutoriales y referencia de API."
+    },
+    "faq": {
+      "title": "Preguntas Frecuentes",
+      "q1": {
+        "question": "¿Cómo restablezco mi contraseña?",
+        "answer": "Ve a la pantalla de inicio de sesión y toca 'Olvidé mi contraseña'. Ingresa tu email y te enviaremos un enlace para restablecerla."
+      },
+      "q2": {
+        "question": "¿Puedo usar Dobify en varios dispositivos?",
+        "answer": "Sí. Tu cuenta se sincroniza en todos los dispositivos. Inicia sesión con las mismas credenciales en cualquier teléfono, tablet o computadora."
+      },
+      "q3": {
+        "question": "¿Cómo agrego un nuevo miembro al equipo?",
+        "answer": "Ve a Configuración > Equipo > Agregar Miembro. Ingresa su email y elige su rol. Recibirán una invitación para unirse."
+      },
+      "q4": {
+        "question": "¿Qué métodos de pago se aceptan?",
+        "answer": "Aceptamos tarjetas de crédito/débito, pagos sin contacto (Apple Pay, Google Pay) y efectivo. Las opciones varían según la región."
+      },
+      "q5": {
+        "question": "¿Cómo exporto mis datos de ventas?",
+        "answer": "Ve a Reportes > Exportar. Elige el rango de fechas y formato (CSV o PDF). El archivo se descargará a tu dispositivo."
+      }
+    },
+    "hours": {
+      "title": "Horario de Soporte",
+      "weekdays": "Lunes - Viernes",
+      "saturday": "Sábado",
+      "sunday": "Domingo",
+      "closed": "Cerrado",
+      "note": "Soporte prioritario disponible 24/7 para planes Crecimiento y Empresarial."
+    }
+  },
+  "cookies": {
+    "title": "Política de Cookies",
+    "lastUpdated": "Última actualización: 23 de julio de 2026",
+    "intro": "Esta Política de Cookies explica cómo Dobify utiliza cookies y tecnologías similares cuando visitas nuestro sitio web o usas nuestros servicios.",
+    "section1": {
+      "title": "Qué Son las Cookies",
+      "text": "Las cookies son pequeños archivos de texto almacenados en tu dispositivo cuando visitas un sitio web. Ayudan al sitio a recordar tus preferencias y mejorar tu experiencia."
+    },
+    "section2": {
+      "title": "Cookies que Utilizamos",
+      "text": "Utilizamos los siguientes tipos de cookies:",
+      "item1": { "name": "Cookies Esenciales", "desc": "Necesarias para que el sitio funcione. Habilitan funciones básicas como seguridad, gestión de sesiones y accesibilidad." },
+      "item2": { "name": "Cookies de Analítica", "desc": "Nos ayudan a entender cómo los visitantes interactúan con nuestro sitio recopilando datos de uso anónimos." },
+      "item3": { "name": "Cookies de Preferencias", "desc": "Recuerdan tu configuración y preferencias, como idioma y región." }
+    },
+    "section3": {
+      "title": "Gestión de Cookies",
+      "text": "Puedes controlar las cookies desde la configuración de tu navegador. La mayoría de navegadores permiten bloquear o eliminar cookies. Sin embargo, bloquear cookies esenciales puede afectar la funcionalidad del sitio."
+    },
+    "section4": {
+      "title": "Cookies de Terceros",
+      "text": "Algunas cookies son colocadas por servicios de terceros que utilizamos, como proveedores de analítica. Estas se rigen por sus respectivas políticas de privacidad."
+    },
+    "contact": {
+      "title": "Contáctenos",
+      "text": "Para preguntas sobre nuestro uso de cookies, contáctenos en:"
+    }
+  }
+}

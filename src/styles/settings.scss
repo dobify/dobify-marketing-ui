@@ -1,0 +1,12 @@
+/**
+ * src/styles/settings.scss
+ *
+ * Configures SASS variables and Vuetify overwrites
+ */
+
+@use 'vuetify/settings' with (
+  $body-font-family: ('Inter', 'Roboto', sans-serif),
+  $heading-font-family: ('Space Grotesk', 'Inter', sans-serif),
+  $border-radius-root: 12px,
+  $spacer: 8px
+);
