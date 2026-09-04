@@ -6,15 +6,35 @@
     "download": "Descargar"
   },
   "hero": {
-    "badge": "Funciona online u offline",
-    "title": "El punto de venta que nunca para de vender",
-    "subtitle": "Dobify es un POS moderno para equipos de retail: inventario, cobros, pagos y reportes multi-sucursal en una sola app.",
-    "cta": "Prueba gratis",
+    "badge": "$0 MXN en lectores de tarjetas",
+    "title": "Tu celular ya es tu terminal de cobro",
+    "subtitle": "Dobify convierte cualquier smartphone en punto de venta con Tap to Pay. Sin hardware, sin cables, sin baterías que se acaban.",
+    "cta": "Descargar gratis",
     "ctaSecondary": "Ver cómo funciona",
     "rating": "4.8 estrellas de 2,400+ comercios",
     "tagline": "tu negocio, organizado",
     "chipSales": "ventas",
-    "chipInventory": "inventario"
+    "chipInventory": "inventario",
+    "savings": "Ahorra $300 - $2,500 MXN en hardware"
+  },
+  "comparison": {
+    "title": "¿Por qué pagar por lectores si tu celular ya cobra?",
+    "without": {
+      "title": "Sin Dobify",
+      "item1": "Lector de tarjetas: $300 - $2,500 MXN",
+      "item2": "Impresora térmica: $800 - $2,000 MXN",
+      "item3": "Rollos de papel: $50 - $150 MXN/mes",
+      "item4": "Baterías mueren, Bluetooth falla",
+      "item5": "Hardware se rompe o lo roban"
+    },
+    "with": {
+      "title": "Con Dobify",
+      "item1": "Tap to Pay directo en tu celular",
+      "item2": "Tickets digitales por WhatsApp",
+      "item3": "Sin costos recurrentes de papel",
+      "item4": "Tu teléfono siempre funciona",
+      "item5": "Nada extra que perder"
+    }
   },
   "platforms": {
     "title": "Disponible para",
@@ -71,38 +91,60 @@
   },
   "pricing": {
     "sectionTitle": "Precios",
-    "title": "Precios simples, sin sorpresas",
-    "subtitle": "Empieza gratis. Escala cuando crezcas.",
+    "title": "Precios claros en pesos mexicanos",
+    "subtitle": "Sin sorpresas. Sin letra chiquita. Cancela cuando quieras.",
     "mostPopular": "Más popular",
-    "downloadCta": "Descargar gratis",
-    "starter": {
-      "name": "Inicial",
+    "downloadCta": "Empezar",
+    "free": {
+      "name": "Gratis",
       "price": "$0",
       "period": "/mes",
-      "item1": "1 sucursal",
-      "item2": "1 caja",
-      "item3": "POS e inventario básico",
-      "item4": "Soporte por email",
+      "target": "Para emprendedores y pop-ups",
+      "item1": "Hasta $15,000 MXN en ventas/mes",
+      "item2": "Hasta 30 productos en catálogo",
+      "item3": "Historial de ventas: 7 días",
+      "item4": "1 usuario / 1 sucursal",
+      "item5": "Tap to Pay incluido",
+      "item6": "Tickets por WhatsApp/QR",
       "cta": "Empezar gratis"
     },
-    "growth": {
-      "name": "Crecimiento",
-      "price": "$39",
-      "period": "/mes por sucursal",
-      "item1": "Cajas ilimitadas",
-      "item2": "Reportes multi-sucursal",
-      "item3": "Roles y permisos",
-      "item4": "Soporte prioritario",
-      "cta": "Prueba gratis"
+    "starter": {
+      "name": "Inicial",
+      "price": "$149",
+      "period": "/mes",
+      "target": "Para comerciantes establecidos",
+      "item1": "Ventas ilimitadas",
+      "item2": "Catálogo ilimitado",
+      "item3": "Reportes e historial completo",
+      "item4": "1 usuario / 1 sucursal",
+      "item5": "Tap to Pay incluido",
+      "item6": "Tickets por WhatsApp/QR",
+      "cta": "Probar gratis"
+    },
+    "pro": {
+      "name": "Pro",
+      "price": "$299",
+      "period": "/mes",
+      "target": "Para negocios con empleados",
+      "item1": "Todo de Inicial, más:",
+      "item2": "Múltiples usuarios + permisos",
+      "item3": "Control de caja anti-robo",
+      "item4": "Módulo de gastos y egresos",
+      "item5": "Cortes X y Z por turno",
+      "item6": "Utilidad neta en tiempo real",
+      "cta": "Probar gratis"
     },
     "enterprise": {
       "name": "Empresarial",
-      "price": "Personalizado",
-      "period": "",
-      "item1": "Onboarding dedicado",
-      "item2": "Integraciones custom",
-      "item3": "SLA y soporte prioritario",
-      "item4": "Precios por volumen",
+      "price": "$699+",
+      "period": "/mes",
+      "target": "Para cadenas y multi-sucursal",
+      "item1": "Todo de Pro, más:",
+      "item2": "Múltiples sucursales",
+      "item3": "Control de inventario avanzado",
+      "item4": "Transferencias entre almacenes",
+      "item5": "Reportes consolidados",
+      "item6": "Soporte prioritario",
       "cta": "Contactar ventas"
     }
   },
@@ -178,23 +220,50 @@
     "section1": {
       "title": "Información que Recopilamos",
       "intro": "Para proporcionar nuestros servicios de punto de venta, recopilamos:",
-      "item1": { "label": "Información de la Cuenta:", "text": "Nombre, dirección de correo electrónico, detalles comerciales e información de contacto." },
-      "item2": { "label": "Datos de Transacciones:", "text": "Detalles sobre ventas, productos, inventario y recibos procesados a través de la plataforma." },
-      "item3": { "label": "Datos de Dispositivos y Uso:", "text": "Información sobre el hardware y los sistemas operativos utilizados para acceder a Dobify, para garantizar la compatibilidad y sincronización." }
+      "item1": {
+        "label": "Información de la Cuenta:",
+        "text": "Nombre, dirección de correo electrónico, detalles comerciales e información de contacto."
+      },
+      "item2": {
+        "label": "Datos de Transacciones:",
+        "text": "Detalles sobre ventas, productos, inventario y recibos procesados a través de la plataforma."
+      },
+      "item3": {
+        "label": "Datos de Dispositivos y Uso:",
+        "text": "Información sobre el hardware y los sistemas operativos utilizados para acceder a Dobify, para garantizar la compatibilidad y sincronización."
+      }
     },
     "section2": {
       "title": "Cómo Utilizamos su Información",
       "intro": "Utilizamos la información recopilada para:",
-      "item1": { "label": "", "text": "Operar y mantener su sistema POS y la sincronización de la base de datos." },
-      "item2": { "label": "", "text": "Procesar pagos de forma segura y facilitar los flujos de verificación de comerciantes." },
-      "item3": { "label": "", "text": "Proporcionar soporte técnico y actualizaciones de la plataforma." }
+      "item1": {
+        "label": "",
+        "text": "Operar y mantener su sistema POS y la sincronización de la base de datos."
+      },
+      "item2": {
+        "label": "",
+        "text": "Procesar pagos de forma segura y facilitar los flujos de verificación de comerciantes."
+      },
+      "item3": {
+        "label": "",
+        "text": "Proporcionar soporte técnico y actualizaciones de la plataforma."
+      }
     },
     "section3": {
       "title": "Procesamiento de Pagos y Servicios de Terceros",
       "intro": "Dobify no almacena directamente información confidencial de tarjetas de crédito en nuestros servidores. Nos asociamos con servicios de terceros seguros:",
-      "item1": { "label": "Stripe y Pasarelas de Pago:", "text": "Utilizamos componentes integrados de Stripe para manejar de forma segura el registro de comerciantes, la verificación y el procesamiento de pagos." },
-      "item2": { "label": "Tap to Pay y Punto de Venta:", "text": "Para transacciones en persona, admitimos funciones de Tap to Pay e integraciones de terminales. Los datos se cifran y transmiten directamente al procesador." },
-      "item3": { "label": "Google Play Services y Apple:", "text": "Utilizados para gestionar lanzamientos de aplicaciones, suscripciones y análisis de la plataforma para usuarios móviles." }
+      "item1": {
+        "label": "Stripe y Pasarelas de Pago:",
+        "text": "Utilizamos componentes integrados de Stripe para manejar de forma segura el registro de comerciantes, la verificación y el procesamiento de pagos."
+      },
+      "item2": {
+        "label": "Tap to Pay y Punto de Venta:",
+        "text": "Para transacciones en persona, admitimos funciones de Tap to Pay e integraciones de terminales. Los datos se cifran y transmiten directamente al procesador."
+      },
+      "item3": {
+        "label": "Google Play Services y Apple:",
+        "text": "Utilizados para gestionar lanzamientos de aplicaciones, suscripciones y análisis de la plataforma para usuarios móviles."
+      }
     },
     "section4": {
       "title": "Retención y Eliminación de Datos",
@@ -270,8 +339,14 @@
     },
     "section8": {
       "title": "Servicios de Terceros",
-      "integration1": { "name": "Stripe:", "desc": "Para procesamiento de pagos y servicios comerciales." },
-      "integration2": { "name": "Proveedores de nube:", "desc": "Para almacenamiento y sincronización de datos." },
+      "integration1": {
+        "name": "Stripe:",
+        "desc": "Para procesamiento de pagos y servicios comerciales."
+      },
+      "integration2": {
+        "name": "Proveedores de nube:",
+        "desc": "Para almacenamiento y sincronización de datos."
+      },
       "note": "Su uso de estas integraciones está sujeto a sus respectivos términos."
     },
     "section9": {
@@ -355,9 +430,18 @@
     "section2": {
       "title": "Cookies que Utilizamos",
       "text": "Utilizamos los siguientes tipos de cookies:",
-      "item1": { "name": "Cookies Esenciales", "desc": "Necesarias para que el sitio funcione. Habilitan funciones básicas como seguridad, gestión de sesiones y accesibilidad." },
-      "item2": { "name": "Cookies de Analítica", "desc": "Nos ayudan a entender cómo los visitantes interactúan con nuestro sitio recopilando datos de uso anónimos." },
-      "item3": { "name": "Cookies de Preferencias", "desc": "Recuerdan tu configuración y preferencias, como idioma y región." }
+      "item1": {
+        "name": "Cookies Esenciales",
+        "desc": "Necesarias para que el sitio funcione. Habilitan funciones básicas como seguridad, gestión de sesiones y accesibilidad."
+      },
+      "item2": {
+        "name": "Cookies de Analítica",
+        "desc": "Nos ayudan a entender cómo los visitantes interactúan con nuestro sitio recopilando datos de uso anónimos."
+      },
+      "item3": {
+        "name": "Cookies de Preferencias",
+        "desc": "Recuerdan tu configuración y preferencias, como idioma y región."
+      }
     },
     "section3": {
       "title": "Gestión de Cookies",

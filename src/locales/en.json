@@ -6,15 +6,35 @@
     "download": "Download"
   },
   "hero": {
-    "badge": "Works online or offline",
-    "title": "The point of sale that never stops ringing",
-    "subtitle": "Dobify is a modern POS for retail teams: inventory, checkout, payments and multi-location reporting in one app.",
-    "cta": "Start free trial",
+    "badge": "$0 MXN in card readers",
+    "title": "Your phone is already your payment terminal",
+    "subtitle": "Dobify turns any smartphone into a POS with Tap to Pay. No hardware, no cables, no dying batteries.",
+    "cta": "Download free",
     "ctaSecondary": "See how it works",
     "rating": "4.8 stars from 2,400+ retailers",
     "tagline": "your business, organized",
     "chipSales": "sales",
-    "chipInventory": "inventory"
+    "chipInventory": "inventory",
+    "savings": "Save $300 - $2,500 MXN on hardware"
+  },
+  "comparison": {
+    "title": "Why pay for readers when your phone already accepts payments?",
+    "without": {
+      "title": "Without Dobify",
+      "item1": "Card reader: $300 - $2,500 MXN",
+      "item2": "Thermal printer: $800 - $2,000 MXN",
+      "item3": "Paper rolls: $50 - $150 MXN/month",
+      "item4": "Batteries die, Bluetooth disconnects",
+      "item5": "Hardware breaks or gets stolen"
+    },
+    "with": {
+      "title": "With Dobify",
+      "item1": "Tap to Pay directly on your phone",
+      "item2": "Digital receipts via WhatsApp",
+      "item3": "No recurring paper costs",
+      "item4": "Your phone always works",
+      "item5": "Nothing extra to lose"
+    }
   },
   "platforms": {
     "title": "Available for",
@@ -71,38 +91,60 @@
   },
   "pricing": {
     "sectionTitle": "Pricing",
-    "title": "Simple pricing, no surprises",
-    "subtitle": "Start free. Upgrade when your team grows.",
+    "title": "Clear pricing in Mexican pesos",
+    "subtitle": "No surprises. No fine print. Cancel anytime.",
     "mostPopular": "Most popular",
-    "downloadCta": "Download free",
-    "starter": {
-      "name": "Starter",
+    "downloadCta": "Get started",
+    "free": {
+      "name": "Free",
       "price": "$0",
       "period": "/mo",
-      "item1": "1 location",
-      "item2": "1 register",
-      "item3": "Core POS & inventory",
-      "item4": "Email support",
+      "target": "For solopreneurs and pop-ups",
+      "item1": "Up to $15,000 MXN in sales/mo",
+      "item2": "Up to 30 products",
+      "item3": "7-day sales history",
+      "item4": "1 user / 1 location",
+      "item5": "Tap to Pay included",
+      "item6": "WhatsApp/QR receipts",
       "cta": "Start free"
     },
-    "growth": {
-      "name": "Growth",
-      "price": "$39",
-      "period": "/mo per location",
-      "item1": "Unlimited registers",
-      "item2": "Multi-location reporting",
-      "item3": "Role-based access",
-      "item4": "Priority support",
-      "cta": "Start free trial"
+    "starter": {
+      "name": "Starter",
+      "price": "$149",
+      "period": "/mo",
+      "target": "For established merchants",
+      "item1": "Unlimited sales",
+      "item2": "Unlimited catalog",
+      "item3": "Full reports & history",
+      "item4": "1 user / 1 location",
+      "item5": "Tap to Pay included",
+      "item6": "WhatsApp/QR receipts",
+      "cta": "Try free"
+    },
+    "pro": {
+      "name": "Pro",
+      "price": "$299",
+      "period": "/mo",
+      "target": "For businesses with employees",
+      "item1": "Everything in Starter, plus:",
+      "item2": "Multiple users + permissions",
+      "item3": "Anti-theft drawer control",
+      "item4": "Expense & outflow module",
+      "item5": "X and Z shift reports",
+      "item6": "Real-time net profit",
+      "cta": "Try free"
     },
     "enterprise": {
       "name": "Enterprise",
-      "price": "Custom",
-      "period": "",
-      "item1": "Dedicated onboarding",
-      "item2": "Custom integrations",
-      "item3": "SLA & priority support",
-      "item4": "Volume pricing",
+      "price": "$699+",
+      "period": "/mo",
+      "target": "For chains and multi-location",
+      "item1": "Everything in Pro, plus:",
+      "item2": "Multiple locations",
+      "item3": "Advanced inventory control",
+      "item4": "Warehouse transfers",
+      "item5": "Consolidated reports",
+      "item6": "Priority support",
       "cta": "Contact sales"
     }
   },

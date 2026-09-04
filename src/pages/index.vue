@@ -2,13 +2,13 @@
   <div>
     <!-- Hero -->
     <v-sheet class="hero-section" color="primary">
-      <v-container class="py-16" max-width="1200" style="min-height: 600px">
+      <v-container class="py-12" max-width="1200" style="min-height: 600px">
         <v-row align="center" class="fill-height">
           <v-col class="text-center text-md-start" cols="12" md="6">
             <v-chip
               class="mb-6"
               color="accent"
-              prepend-icon="mdi-cloud-off-outline"
+              prepend-icon="mdi-cellphone-nfc"
               size="large"
               variant="flat"
             >
@@ -74,21 +74,6 @@
                 <v-icon icon="mdi-play-circle-outline" start />
                 {{ $t('hero.ctaSecondary') }}
               </v-btn>
-
-              <div class="d-flex align-center ga-2">
-                <v-rating
-                  color="accent"
-                  density="compact"
-                  half-increments
-                  :model-value="4.5"
-                  readonly
-                  size="x-small"
-                />
-
-                <span class="text-body-2 text-white" style="opacity: 0.9">
-                  {{ $t('hero.rating') }}
-                </span>
-              </div>
             </div>
           </v-col>
 
@@ -142,8 +127,98 @@
       </v-container>
     </v-sheet>
 
+    <!-- Comparison Section -->
+    <v-sheet id="comparison" class="py-12" color="surface">
+      <v-container max-width="1000">
+        <div class="text-center mb-10">
+          <h2
+            class="text-h4 text-md-h3 font-weight-bold mb-4"
+            style="font-family: 'Space Grotesk', sans-serif"
+          >
+            {{ $t('comparison.title') }}
+          </h2>
+        </div>
+
+        <v-row>
+          <!-- Without Dobify -->
+          <v-col cols="12" md="6">
+            <v-card
+              class="pa-6 h-100"
+              color="error"
+              variant="tonal"
+              style="border-left: 4px solid rgb(var(--v-theme-error))"
+            >
+              <div class="d-flex align-center mb-4">
+                <v-icon class="mr-3" color="error" icon="mdi-close-circle" size="28" />
+                <span class="text-h6 font-weight-bold">{{ $t('comparison.without.title') }}</span>
+              </div>
+
+              <v-list bg-color="transparent" density="compact" lines="false" slim>
+                <v-list-item
+                  v-for="i in 5"
+                  :key="i"
+                  class="px-0 mb-1"
+                  density="compact"
+                  lines="false"
+                  :prepend-gap="8"
+                  slim
+                >
+                  <template #prepend>
+                    <v-icon color="error" icon="mdi-minus" size="18" />
+                  </template>
+                  <v-list-item-title class="text-body-2 text-wrap">
+                    {{ $t('comparison.without.item' + i) }}
+                  </v-list-item-title>
+                </v-list-item>
+              </v-list>
+            </v-card>
+          </v-col>
+
+          <!-- With Dobify -->
+          <v-col cols="12" md="6">
+            <v-card
+              class="pa-6 h-100"
+              color="success"
+              variant="tonal"
+              style="border-left: 4px solid rgb(var(--v-theme-success))"
+            >
+              <div class="d-flex align-center mb-4">
+                <v-icon class="mr-3" color="success" icon="mdi-check-circle" size="28" />
+                <span class="text-h6 font-weight-bold">{{ $t('comparison.with.title') }}</span>
+              </div>
+
+              <v-list bg-color="transparent" density="compact" lines="false" slim>
+                <v-list-item
+                  v-for="i in 5"
+                  :key="i"
+                  class="px-0 mb-1"
+                  density="compact"
+                  lines="false"
+                  :prepend-gap="8"
+                  slim
+                >
+                  <template #prepend>
+                    <v-icon color="success" icon="mdi-check" size="18" />
+                  </template>
+                  <v-list-item-title class="text-body-2 text-wrap">
+                    {{ $t('comparison.with.item' + i) }}
+                  </v-list-item-title>
+                </v-list-item>
+              </v-list>
+            </v-card>
+          </v-col>
+        </v-row>
+
+        <div class="text-center mt-8">
+          <v-chip color="accent" prepend-icon="mdi-piggy-bank" size="large" variant="flat">
+            {{ $t('hero.savings') }}
+          </v-chip>
+        </div>
+      </v-container>
+    </v-sheet>
+
     <!-- Features -->
-    <v-sheet id="features" class="py-16" color="background">
+    <v-sheet id="features" class="py-12" color="background">
       <v-container max-width="1200">
         <div class="text-center mb-12">
           <h2
@@ -197,7 +272,7 @@
     </v-sheet>
 
     <!-- How it works -->
-    <v-sheet id="how-it-works" border="y" class="py-16" color="surface">
+    <v-sheet id="how-it-works" border="y" class="py-12" color="surface">
       <v-container max-width="1000">
         <div class="text-center mb-12">
           <h2
@@ -241,7 +316,7 @@
     </v-sheet>
 
     <!-- Pricing -->
-    <v-sheet id="pricing" class="py-16" color="background">
+    <v-sheet id="pricing" class="py-12" color="background">
       <v-container max-width="1200">
         <div class="text-center mb-12">
           <h2
@@ -256,78 +331,80 @@
           </p>
         </div>
 
-        <v-row justify="center">
+        <v-row justify="center" align="stretch">
           <v-col
             v-for="plan in plansList"
             :key="plan.key"
             cols="12"
-            md="4"
+            lg="3"
+            md="6"
             sm="6"
           >
             <v-card
               :border="plan.highlight ? 'accent md' : 'sm'"
-              class="pa-6 h-100 d-flex flex-column"
-              :elevation="plan.highlight ? 8 : 1"
+              class="pa-5 d-flex flex-column h-100"
+              :elevation="plan.highlight ? 12 : 1"
               hover
-              :hover-elevation="plan.highlight ? 12 : 4"
+              :hover-elevation="plan.highlight ? 16 : 4"
             >
               <v-chip
                 v-if="plan.highlight"
-                class="mb-4 align-self-start"
+                class="mb-2 align-self-start"
                 color="accent"
                 size="small"
                 variant="flat"
               >
                 {{ $t('pricing.mostPopular') }}
               </v-chip>
+              <div v-else class="mb-2" style="height: 24px" />
 
-              <div class="text-subtitle-2 font-weight-medium text-medium-emphasis">
+              <div class="text-overline font-weight-medium text-medium-emphasis">
                 {{ $t('pricing.' + plan.key + '.name') }}
               </div>
 
-              <div class="mb-4">
+              <div class="mb-1">
                 <span
-                  class="text-h2 font-weight-bold"
+                  class="text-h4 font-weight-bold"
                   style="font-family: 'Space Grotesk', sans-serif"
                 >{{ $t('pricing.' + plan.key + '.price') }}</span>
-
-                <span class="text-body-2 text-medium-emphasis">{{
-                  $t('pricing.' + plan.key + '.period')
-                }}</span>
+                <span class="text-body-2 text-medium-emphasis">
+                  {{ $t('pricing.' + plan.key + '.period') }}
+                </span>
               </div>
 
-              <v-divider class="mb-4" />
+              <p class="text-caption text-medium-emphasis mb-0" style="min-height: 40px">
+                {{ $t('pricing.' + plan.key + '.target') }}
+              </p>
 
-              <v-list
-                bg-color="transparent"
-                class="mb-4 flex-grow-1"
-                density="compact"
-              >
-                <v-list-item v-for="i in 4" :key="i" class="px-0">
+              <v-divider class="my-4" />
+
+              <v-list bg-color="transparent" class="pa-0 flex-grow-1" density="compact" lines="false" slim>
+                <v-list-item
+                  v-for="i in 6"
+                  :key="i"
+                  class="px-0 mb-1"
+                  density="compact"
+                  lines="false"
+                  :prepend-gap="8"
+                  slim
+                >
                   <template #prepend>
-                    <v-icon
-                      class="mr-3"
-                      color="success"
-                      icon="mdi-check-circle"
-                      size="20"
-                    />
+                    <v-icon :color="plan.highlight ? 'accent' : 'success'" icon="mdi-check" size="16" />
                   </template>
-
-                  <v-list-item-title class="text-body-2">{{
-                    $t('pricing.' + plan.key + '.item' + i)
-                  }}</v-list-item-title>
+                  <v-list-item-title class="text-body-2 text-wrap">
+                    {{ $t('pricing.' + plan.key + '.item' + i) }}
+                  </v-list-item-title>
                 </v-list-item>
               </v-list>
 
               <v-btn
-                block
-                class="text-none"
+                class="text-none mt-auto w-100"
                 :color="plan.highlight ? 'accent' : 'primary'"
-                href="#download"
-                size="large"
+                :href="plan.key === 'enterprise' ? '#contact' : '#download'"
+                rounded="lg"
                 :variant="plan.highlight ? 'flat' : 'outlined'"
               >
-                {{ $t('pricing.downloadCta') }}
+                {{ $t('pricing.' + plan.key + '.cta') }}
               </v-btn>
             </v-card>
           </v-col>
@@ -335,71 +412,8 @@
       </v-container>
     </v-sheet>
 
-    <!-- Testimonials -->
-    <v-sheet border="y" class="py-16" color="surface">
-      <v-container max-width="1200">
-        <div class="text-center mb-12">
-          <v-chip class="mb-4" color="accent" variant="flat">{{
-            $t('testimonials.sectionTitle')
-          }}</v-chip>
-
-          <h2
-            class="text-h3 font-weight-bold"
-            style="font-family: 'Space Grotesk', sans-serif"
-          >
-            {{ $t('testimonials.title') }}
-          </h2>
-        </div>
-
-        <v-slide-group show-arrows>
-          <v-slide-group-item
-            v-for="testimonial in testimonialsList"
-            :key="testimonial.key"
-          >
-            <v-card
-              class="ma-3 pa-6"
-              max-width="360"
-              min-width="320"
-              variant="outlined"
-            >
-              <v-rating
-                class="mb-4"
-                color="warning"
-                density="compact"
-                :model-value="5"
-                readonly
-                size="small"
-              />
-
-              <p class="text-body-1 mb-4">
-                "{{ $t('testimonials.' + testimonial.key + '.text') }}"
-              </p>
-
-              <div class="d-flex align-center">
-                <v-avatar class="mr-3" color="primary" size="40">
-                  <span class="text-body-2 font-weight-bold">{{
-                    testimonial.initials
-                  }}</span>
-                </v-avatar>
-
-                <div>
-                  <div class="text-subtitle-2 font-weight-bold">
-                    {{ $t('testimonials.' + testimonial.key + '.name') }}
-                  </div>
-
-                  <div class="text-caption text-medium-emphasis">
-                    {{ $t('testimonials.' + testimonial.key + '.role') }}
-                  </div>
-                </div>
-              </div>
-            </v-card>
-          </v-slide-group-item>
-        </v-slide-group>
-      </v-container>
-    </v-sheet>
-
     <!-- FAQ -->
-    <v-sheet class="py-16" color="background">
+    <v-sheet class="py-12" color="background">
       <v-container max-width="800">
         <div class="text-center mb-10">
           <h2
@@ -425,7 +439,7 @@
     </v-sheet>
 
     <!-- Download CTA -->
-    <v-sheet id="download" class="py-16" color="primary">
+    <v-sheet id="download" class="py-12" color="primary">
       <v-container max-width="700">
         <div class="text-center">
           <h2
@@ -495,8 +509,9 @@
   const stepsList = [{ key: 'step1' }, { key: 'step2' }, { key: 'step3' }]
 
   const plansList = [
+    { key: 'free', highlight: false },
     { key: 'starter', highlight: false },
-    { key: 'growth', highlight: true },
+    { key: 'pro', highlight: true },
     { key: 'enterprise', highlight: false },
   ]
 
@@ -576,4 +591,5 @@
     left: calc(66.66% + 40px);
   }
 }
+
 </style>
