@@ -30,7 +30,7 @@ jobs:
           username: ${{ secrets.DROPLET_USER }}
           key: ${{ secrets.DROPLET_SSH_KEY }}
           source: "dist/*"
-          target: "/var/www/marketing/"
+          target: "/var/www/marketing/dist/"
           strip_components: 1
           rm: true
 
