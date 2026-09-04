@@ -1,0 +1,33 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="1200" height="630" fill="#534AB7"/>
+
+  <!-- Subtle gradient overlay -->
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#534AB7;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3D3794;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#grad)"/>
+
+  <!-- Logo icon (scaled up) -->
+  <g transform="translate(100, 165) scale(2.5)">
+    <path d="M92 0H28C12.536 0 0 12.536 0 28V92C0 107.464 12.536 120 28 120H92C107.464 120 120 107.464 120 92V28C120 12.536 107.464 0 92 0Z" fill="#FFFFFF" fill-opacity="0.15"/>
+    <path d="M88 24H32C27.5817 24 24 27.5817 24 32C24 36.4183 27.5817 40 32 40H88C92.4183 40 96 36.4183 96 32C96 27.5817 92.4183 24 88 24Z" fill="#5DCAA5"/>
+    <path d="M78 46H42C37.5817 46 34 49.5817 34 54C34 58.4183 37.5817 62 42 62H78C82.4183 62 86 58.4183 86 54C86 49.5817 82.4183 46 78 46Z" fill="#AFA9EC"/>
+    <path d="M68 68H52C47.5817 68 44 71.5817 44 76C44 80.4183 47.5817 84 52 84H68C72.4183 84 76 80.4183 76 76C76 71.5817 72.4183 68 68 68Z" fill="#EF9F27"/>
+  </g>
+
+  <!-- Text: Dobify -->
+  <text x="480" y="280" font-family="system-ui, -apple-system, sans-serif" font-size="96" font-weight="700" fill="#FFFFFF">Dobify</text>
+
+  <!-- Tagline -->
+  <text x="480" y="360" font-family="system-ui, -apple-system, sans-serif" font-size="36" font-weight="400" fill="#FFFFFF" fill-opacity="0.9">Point of Sale that never stops</text>
+
+  <!-- Subtitle -->
+  <text x="480" y="420" font-family="system-ui, -apple-system, sans-serif" font-size="24" font-weight="400" fill="#5DCAA5">Tap to Pay • Offline-first • Multi-location</text>
+
+  <!-- Bottom accent line -->
+  <rect x="480" y="470" width="200" height="4" rx="2" fill="#EF9F27"/>
+</svg>
