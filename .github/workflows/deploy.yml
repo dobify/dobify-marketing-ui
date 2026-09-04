@@ -41,4 +41,4 @@ jobs:
           username: ${{ secrets.DROPLET_USER }}
           key: ${{ secrets.DROPLET_SSH_KEY }}
           script: |
-            docker exec dobify-api-nginx nginx -s reload || sudo systemctl reload nginx
+            docker exec dobify-api nginx -s reload
