@@ -2,7 +2,7 @@
   <div>
     <!-- Hero -->
     <v-sheet class="hero-section" color="primary">
-      <v-container class="py-1" max-width="1200" style="min-height: 600px">
+      <v-container class="py-16" max-width="1200" style="min-height: 600px">
         <v-row align="center" class="fill-height">
           <v-col class="text-center text-md-start" cols="12" md="6">
             <v-chip
