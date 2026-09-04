@@ -3,7 +3,9 @@
     "features": "Funciones",
     "howItWorks": "Cómo funciona",
     "pricing": "Precios",
-    "download": "Descargar"
+    "download": "Descargar",
+    "privacy": "Privacidad",
+    "terms": "Terminos"
   },
   "hero": {
     "badge": "$0 MXN en lectores de tarjetas",

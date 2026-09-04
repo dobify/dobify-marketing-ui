@@ -3,7 +3,9 @@
     "features": "Features",
     "howItWorks": "How it works",
     "pricing": "Pricing",
-    "download": "Download"
+    "download": "Download",
+    "privacy": "Privacy",
+    "terms": "Terms"
   },
   "hero": {
     "badge": "$0 MXN in card readers",
@@ -220,23 +222,50 @@
     "section1": {
       "title": "Information We Collect",
       "intro": "To provide our point-of-sale services, we collect:",
-      "item1": { "label": "Account Information:", "text": "Name, email address, business details, and contact information." },
-      "item2": { "label": "Transaction Data:", "text": "Details regarding sales, products, inventory, and receipts processed through the platform." },
-      "item3": { "label": "Device & Usage Data:", "text": "Information about the hardware and operating systems used to access Dobify, to ensure cross-platform compatibility and synchronization." }
+      "item1": {
+        "label": "Account Information:",
+        "text": "Name, email address, business details, and contact information."
+      },
+      "item2": {
+        "label": "Transaction Data:",
+        "text": "Details regarding sales, products, inventory, and receipts processed through the platform."
+      },
+      "item3": {
+        "label": "Device & Usage Data:",
+        "text": "Information about the hardware and operating systems used to access Dobify, to ensure cross-platform compatibility and synchronization."
+      }
     },
     "section2": {
       "title": "How We Use Your Information",
       "intro": "We use the collected information to:",
-      "item1": { "label": "", "text": "Operate and maintain your POS system and database synchronization." },
-      "item2": { "label": "", "text": "Process payments securely and facilitate merchant verification flows." },
-      "item3": { "label": "", "text": "Provide technical support and platform updates." }
+      "item1": {
+        "label": "",
+        "text": "Operate and maintain your POS system and database synchronization."
+      },
+      "item2": {
+        "label": "",
+        "text": "Process payments securely and facilitate merchant verification flows."
+      },
+      "item3": {
+        "label": "",
+        "text": "Provide technical support and platform updates."
+      }
     },
     "section3": {
       "title": "Payment Processing and Third-Party Services",
       "intro": "Dobify does not directly store sensitive credit card information on our servers. We partner with secure, industry-leading third-party services:",
-      "item1": { "label": "Stripe & Payment Gateways:", "text": "We utilize pre-built embedded components from Stripe to securely handle merchant onboarding, verification, and payment processing." },
-      "item2": { "label": "Tap to Pay & Point of Sale:", "text": "For in-person transactions, we support Tap to Pay features and terminal integrations via Stripe. Transaction data is encrypted and passed directly to the payment processor." },
-      "item3": { "label": "Google Play Services & Apple:", "text": "Used to manage app releases, subscriptions, and platform analytics for mobile users." }
+      "item1": {
+        "label": "Stripe & Payment Gateways:",
+        "text": "We utilize pre-built embedded components from Stripe to securely handle merchant onboarding, verification, and payment processing."
+      },
+      "item2": {
+        "label": "Tap to Pay & Point of Sale:",
+        "text": "For in-person transactions, we support Tap to Pay features and terminal integrations via Stripe. Transaction data is encrypted and passed directly to the payment processor."
+      },
+      "item3": {
+        "label": "Google Play Services & Apple:",
+        "text": "Used to manage app releases, subscriptions, and platform analytics for mobile users."
+      }
     },
     "section4": {
       "title": "Data Retention and Deletion",
@@ -312,8 +341,14 @@
     },
     "section8": {
       "title": "Third-Party Services",
-      "integration1": { "name": "Stripe:", "desc": "For payment processing and merchant services." },
-      "integration2": { "name": "Cloud providers:", "desc": "For data storage and synchronization." },
+      "integration1": {
+        "name": "Stripe:",
+        "desc": "For payment processing and merchant services."
+      },
+      "integration2": {
+        "name": "Cloud providers:",
+        "desc": "For data storage and synchronization."
+      },
       "note": "Your use of these integrations is subject to their respective terms."
     },
     "section9": {
@@ -397,9 +432,18 @@
     "section2": {
       "title": "Cookies We Use",
       "text": "We use the following types of cookies:",
-      "item1": { "name": "Essential Cookies", "desc": "Required for the website to function. They enable core features like security, session management, and accessibility." },
-      "item2": { "name": "Analytics Cookies", "desc": "Help us understand how visitors interact with our website by collecting anonymous usage data." },
-      "item3": { "name": "Preference Cookies", "desc": "Remember your settings and preferences, such as language and region." }
+      "item1": {
+        "name": "Essential Cookies",
+        "desc": "Required for the website to function. They enable core features like security, session management, and accessibility."
+      },
+      "item2": {
+        "name": "Analytics Cookies",
+        "desc": "Help us understand how visitors interact with our website by collecting anonymous usage data."
+      },
+      "item3": {
+        "name": "Preference Cookies",
+        "desc": "Remember your settings and preferences, such as language and region."
+      }
     },
     "section3": {
       "title": "Managing Cookies",

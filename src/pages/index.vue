@@ -153,13 +153,13 @@
                 <span class="text-h6 font-weight-bold">{{ $t('comparison.without.title') }}</span>
               </div>
 
-              <v-list bg-color="transparent" density="compact" lines="false" slim>
+              <v-list bg-color="transparent" density="compact" :lines="false" slim>
                 <v-list-item
                   v-for="i in 5"
                   :key="i"
                   class="px-0 mb-1"
                   density="compact"
-                  lines="false"
+                  :lines="false"
                   :prepend-gap="8"
                   slim
                 >
@@ -187,13 +187,13 @@
                 <span class="text-h6 font-weight-bold">{{ $t('comparison.with.title') }}</span>
               </div>
 
-              <v-list bg-color="transparent" density="compact" lines="false" slim>
+              <v-list bg-color="transparent" density="compact" :lines="false" slim>
                 <v-list-item
                   v-for="i in 5"
                   :key="i"
                   class="px-0 mb-1"
                   density="compact"
-                  lines="false"
+                  :lines="false"
                   :prepend-gap="8"
                   slim
                 >
@@ -378,13 +378,13 @@
 
               <v-divider class="my-4" />
 
-              <v-list bg-color="transparent" class="pa-0 flex-grow-1" density="compact" lines="false" slim>
+              <v-list bg-color="transparent" class="pa-0 flex-grow-1" density="compact" :lines="false" slim>
                 <v-list-item
                   v-for="i in 6"
                   :key="i"
                   class="px-0 mb-1"
                   density="compact"
-                  lines="false"
+                  :lines="false"
                   :prepend-gap="8"
                   slim
                 >
