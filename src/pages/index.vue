@@ -49,7 +49,7 @@
               <v-btn
                 class="pa-0 store-badge-primary"
                 height="52"
-                href="#"
+                href="https://play.google.com/store/apps/details?id=mx.dobify.pos&hl=es"
                 rel="noopener noreferrer"
                 target="_blank"
                 variant="text"
@@ -145,8 +145,8 @@
             <v-card
               class="pa-6 h-100"
               color="error"
-              variant="tonal"
               style="border-left: 4px solid rgb(var(--v-theme-error))"
+              variant="tonal"
             >
               <div class="d-flex align-center mb-4">
                 <v-icon class="mr-3" color="error" icon="mdi-close-circle" size="28" />
@@ -166,6 +166,7 @@
                   <template #prepend>
                     <v-icon color="error" icon="mdi-minus" size="18" />
                   </template>
+
                   <v-list-item-title class="text-body-2 text-wrap">
                     {{ $t('comparison.without.item' + i) }}
                   </v-list-item-title>
@@ -179,8 +180,8 @@
             <v-card
               class="pa-6 h-100"
               color="success"
-              variant="tonal"
               style="border-left: 4px solid rgb(var(--v-theme-success))"
+              variant="tonal"
             >
               <div class="d-flex align-center mb-4">
                 <v-icon class="mr-3" color="success" icon="mdi-check-circle" size="28" />
@@ -200,6 +201,7 @@
                   <template #prepend>
                     <v-icon color="success" icon="mdi-check" size="18" />
                   </template>
+
                   <v-list-item-title class="text-body-2 text-wrap">
                     {{ $t('comparison.with.item' + i) }}
                   </v-list-item-title>
@@ -331,7 +333,7 @@
           </p>
         </div>
 
-        <v-row justify="center" align="stretch">
+        <v-row align="stretch" justify="center">
           <v-col
             v-for="plan in plansList"
             :key="plan.key"
@@ -356,6 +358,7 @@
               >
                 {{ $t('pricing.mostPopular') }}
               </v-chip>
+
               <div v-else class="mb-2" style="height: 24px" />
 
               <div class="text-overline font-weight-medium text-medium-emphasis">
@@ -367,6 +370,7 @@
                   class="text-h4 font-weight-bold"
                   style="font-family: 'Space Grotesk', sans-serif"
                 >{{ $t('pricing.' + plan.key + '.price') }}</span>
+
                 <span class="text-body-2 text-medium-emphasis">
                   {{ $t('pricing.' + plan.key + '.period') }}
                 </span>
@@ -378,7 +382,13 @@
 
               <v-divider class="my-4" />
 
-              <v-list bg-color="transparent" class="pa-0 flex-grow-1" density="compact" :lines="false" slim>
+              <v-list
+                bg-color="transparent"
+                class="pa-0 flex-grow-1"
+                density="compact"
+                :lines="false"
+                slim
+              >
                 <v-list-item
                   v-for="i in 6"
                   :key="i"
@@ -391,6 +401,7 @@
                   <template #prepend>
                     <v-icon :color="plan.highlight ? 'accent' : 'success'" icon="mdi-check" size="16" />
                   </template>
+
                   <v-list-item-title class="text-body-2 text-wrap">
                     {{ $t('pricing.' + plan.key + '.item' + i) }}
                   </v-list-item-title>
