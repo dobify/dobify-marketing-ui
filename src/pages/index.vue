@@ -33,7 +33,7 @@
               <v-btn
                 class="pa-0 store-badge-primary"
                 height="52"
-                href="#"
+                href="https://apps.apple.com/mx/app/dobify/id6794150516"
                 rel="noopener noreferrer"
                 target="_blank"
                 variant="text"
