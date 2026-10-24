@@ -46,5 +46,11 @@ export default defineConfig({
   },
   server: {
     port: 3000,
+    proxy: {
+      '/api/prices': {
+        target: 'http://localhost',
+        changeOrigin: true,
+      },
+    },
   },
 })

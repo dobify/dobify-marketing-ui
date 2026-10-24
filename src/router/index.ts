@@ -6,11 +6,7 @@
 
 // Composables
 import { createRouter, createWebHistory } from 'vue-router'
-import Cookies from '@/pages/cookies.vue'
 import Index from '@/pages/index.vue'
-import Privacy from '@/pages/privacy.vue'
-import Support from '@/pages/support.vue'
-import Terms from '@/pages/terms.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -23,22 +19,22 @@ const router = createRouter({
     {
       path: '/privacy',
       name: 'Privacy',
-      component: Privacy,
+      component: () => import('@/pages/privacy.vue'),
     },
     {
       path: '/terms',
       name: 'Terms',
-      component: Terms,
+      component: () => import('@/pages/terms.vue'),
     },
     {
       path: '/support',
       name: 'Support',
-      component: Support,
+      component: () => import('@/pages/support.vue'),
     },
     {
       path: '/cookies',
       name: 'Cookies',
-      component: Cookies,
+      component: () => import('@/pages/cookies.vue'),
     },
   ],
   scrollBehavior (to, from, savedPosition) {
@@ -46,7 +42,11 @@ const router = createRouter({
       return savedPosition
     }
     if (to.hash) {
-      return { el: to.hash, behavior: 'smooth' }
+      return {
+        el: to.hash,
+        top: 88,
+        behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth',
+      }
     }
     return { top: 0 }
   },
