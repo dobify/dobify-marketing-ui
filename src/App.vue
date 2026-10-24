@@ -1,171 +1,184 @@
 <template>
-  <v-app>
-    <v-app-bar border="b" color="surface" elevation="0" height="72">
-      <v-container class="d-flex align-center" max-width="1200">
-        <v-img
-          alt="Dobify"
-          class="mr-3 flex-0-0 cursor-pointer"
-          height="36"
-          rounded="lg"
-          src="@/assets/logo.svg"
-          width="36"
-          @click="$router.push({ name: 'Home' })"
-        />
+  <v-app class="site-app">
+    <a class="skip-link" href="#main-content">{{ t('nav.skipContent') }}</a>
 
-        <v-app-bar-title
-          class="text-h6 font-weight-bold flex-0-1-auto cursor-pointer d-none d-sm-flex"
-          style="font-family: 'Space Grotesk', sans-serif;"
-          @click="$router.push({ name: 'Home' })"
-        >
-          Dobify
-        </v-app-bar-title>
+    <v-app-bar
+      border="b"
+      class="site-header"
+      color="surface"
+      elevation="0"
+      height="72"
+    >
+      <v-container class="header-inner" max-width="1200">
+        <router-link aria-label="Dobify" class="brand-link" to="/">
+          <img alt="" height="34" src="@/assets/logo.svg" width="34">
+          <span class="header-brand-name">Dobify</span>
+        </router-link>
 
-        <v-spacer />
+        <nav :aria-label="t('nav.mainNavigation')" class="desktop-nav">
+          <v-btn
+            v-for="link in navLinks"
+            :key="link.to"
+            :active="route.fullPath === link.to"
+            class="text-none"
+            :to="link.to"
+            variant="text"
+          >
+            {{ link.label }}
+          </v-btn>
+        </nav>
 
-        <v-slide-group class="d-none d-md-flex mr-4">
-          <v-slide-group-item v-for="link in navLinks" :key="link.href">
-            <v-btn class="text-none" :href="link.href" variant="text">{{ link.label }}</v-btn>
-          </v-slide-group-item>
-        </v-slide-group>
+        <div class="header-actions">
+          <v-btn
+            :active="false"
+            class="header-download text-none"
+            color="primary"
+            to="/#download"
+            variant="flat"
+          >
+            {{ t('nav.download') }}
+          </v-btn>
 
-        <v-btn class="text-none" color="primary" href="#download" variant="flat">
-          {{ $t('nav.download') }}
-        </v-btn>
+          <v-menu location="bottom end">
+            <template #activator="{ props }">
+              <v-btn
+                v-bind="props"
+                :aria-label="t('nav.language')"
+                icon
+                size="small"
+                variant="text"
+              >
+                <v-icon icon="mdi-translate" size="22" />
+              </v-btn>
+            </template>
 
-        <v-menu>
-          <template #activator="{ props }">
-            <v-btn v-bind="props" class="ml-2" icon variant="text">
-              <v-icon icon="mdi-translate" />
-            </v-btn>
-          </template>
+            <v-list :aria-label="t('nav.language')" density="compact">
+              <v-list-item :active="locale === 'en'" title="English" @click="setLocale('en')" />
+              <v-list-item :active="locale === 'es'" title="Español" @click="setLocale('es')" />
+            </v-list>
+          </v-menu>
 
-          <v-list density="compact">
-            <v-list-item :active="locale === 'en'" @click="setLocale('en')">
-              <v-list-item-title>English</v-list-item-title>
-            </v-list-item>
-
-            <v-list-item :active="locale === 'es'" @click="setLocale('es')">
-              <v-list-item-title>Español</v-list-item-title>
-            </v-list-item>
-          </v-list>
-        </v-menu>
-
-        <v-btn class="d-md-none ml-2" icon variant="text" @click="drawer = !drawer">
-          <v-icon icon="mdi-menu" />
-        </v-btn>
+          <v-btn
+            :aria-expanded="drawer"
+            :aria-label="t('nav.openMenu')"
+            class="mobile-menu-toggle"
+            icon
+            size="small"
+            variant="text"
+            @click="drawer = !drawer"
+          >
+            <v-icon icon="mdi-menu" size="24" />
+          </v-btn>
+        </div>
       </v-container>
     </v-app-bar>
 
-    <v-navigation-drawer v-model="drawer" location="right" temporary>
+    <v-navigation-drawer
+      v-model="drawer"
+      :aria-label="t('nav.mainNavigation')"
+      location="end"
+      temporary
+      width="280"
+    >
+      <div class="drawer-header">
+        <span class="brand-name">Dobify</span>
+
+        <v-btn
+          :aria-label="t('nav.closeMenu')"
+          icon="mdi-close"
+          size="small"
+          variant="text"
+          @click="drawer = false"
+        />
+      </div>
+
       <v-list nav>
         <v-list-item
           v-for="link in navLinks"
-          :key="link.href"
-          :href="link.href"
+          :key="link.to"
+          :active="route.fullPath === link.to"
           :prepend-icon="link.icon"
           :title="link.label"
+          :to="link.to"
           @click="drawer = false"
         />
       </v-list>
 
       <template #append>
-        <div class="pa-4">
+        <div class="drawer-download">
           <v-btn
             block
             class="text-none"
             color="primary"
-            href="#download"
+            to="/#download"
             variant="flat"
+            @click="drawer = false"
           >
-            {{ $t('nav.download') }}
+            {{ t('nav.download') }}
           </v-btn>
         </div>
       </template>
     </v-navigation-drawer>
 
-    <v-main>
+    <v-main id="main-content" tabindex="-1">
       <router-view />
     </v-main>
 
-    <v-footer border="t" class="flex-column pa-0" color="surface">
-      <v-container class="py-12" max-width="1200">
-        <v-row>
-          <v-col cols="12" md="4">
-            <div class="d-flex align-center mb-4">
-              <v-img
-                alt="Dobify"
-                class="mr-2 flex-0-0"
-                height="32"
-                rounded="md"
-                src="@/assets/logo.svg"
-                width="32"
-              />
+    <v-footer border="t" class="site-footer" color="surface">
+      <v-container max-width="1200">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <router-link aria-label="Dobify" class="brand-link" to="/">
+              <img alt="" height="36" src="@/assets/logo.svg" width="36">
+              <span>Dobify</span>
+            </router-link>
 
-              <span class="text-h5 font-weight-bold" style="font-family: 'Space Grotesk', sans-serif;">Dobify</span>
-            </div>
+            <p>{{ t('footer.tagline') }}</p>
 
-            <p class="text-body-2 text-medium-emphasis mb-4" style="max-width: 280px;">
-              {{ $t('footer.tagline') }}
-            </p>
+            <a class="footer-contact" href="mailto:support@dobify.com">
+              <v-icon icon="mdi-email-outline" size="18" />
+              support@dobify.com
+            </a>
+          </div>
 
-            <div class="d-flex ga-2">
-              <v-btn color="primary" density="comfortable" icon="mdi-twitter" variant="tonal" />
-              <v-btn color="primary" density="comfortable" icon="mdi-linkedin" variant="tonal" />
-              <v-btn color="primary" density="comfortable" icon="mdi-github" variant="tonal" />
-            </div>
-          </v-col>
+          <nav :aria-label="t('footer.product')" class="footer-nav">
+            <h2>{{ t('footer.product') }}</h2>
+            <router-link v-for="link in navLinks.slice(0, 3)" :key="link.to" :to="link.to">{{ link.label }}</router-link>
+            <router-link to="/#faq">{{ t('faq.sectionTitle') }}</router-link>
+          </nav>
 
-          <v-col cols="6" md="2" sm="4">
-            <div class="text-overline text-medium-emphasis mb-3">{{ $t('footer.product') }}</div>
+          <nav :aria-label="t('footer.platforms')" class="footer-nav">
+            <h2>{{ t('footer.platforms') }}</h2>
 
-            <v-list bg-color="transparent" class="mx-n4" density="compact" nav>
-              <v-list-item href="#features" :title="$t('nav.features')" />
-              <v-list-item href="#pricing" :title="$t('nav.pricing')" />
-              <v-list-item href="#how-it-works" :title="$t('nav.howItWorks')" />
-            </v-list>
-          </v-col>
+            <a :href="playStoreUrl" rel="noopener noreferrer" target="_blank">
+              <v-icon icon="mdi-android" size="18" />
+              Google Play
+            </a>
 
-          <v-col cols="6" md="2" sm="4">
-            <div class="text-overline text-medium-emphasis mb-3">{{ $t('footer.platforms') }}</div>
+            <a :href="appStoreUrl" rel="noopener noreferrer" target="_blank">
+              <v-icon icon="mdi-apple" size="18" />
+              App Store
+            </a>
+          </nav>
 
-            <v-list bg-color="transparent" class="mx-n4" density="compact" nav>
-              <v-list-item prepend-icon="mdi-android" :title="$t('platforms.android')" />
-              <v-list-item prepend-icon="mdi-apple" :title="$t('platforms.ios')" />
-              <v-list-item prepend-icon="mdi-web" :title="$t('platforms.web')" />
-              <v-list-item prepend-icon="mdi-desktop-classic" :title="$t('platforms.desktop')" />
-            </v-list>
-          </v-col>
+          <div class="footer-help">
+            <v-icon color="primary" icon="mdi-message-text-outline" size="28" />
+            <h2>{{ t('footer.helpTitle') }}</h2>
+            <p>{{ t('footer.helpText') }}</p>
 
-          <v-col cols="12" md="4" sm="4">
-            <div class="text-overline text-medium-emphasis mb-3">{{ $t('footer.stayUpdated') }}</div>
-            <p class="text-body-2 text-medium-emphasis mb-3">{{ $t('footer.stayUpdatedText') }}</p>
+            <v-btn class="text-none" color="primary" to="/support" variant="outlined">
+              {{ t('footer.support') }}
+              <v-icon end icon="mdi-arrow-right" size="18" />
+            </v-btn>
+          </div>
+        </div>
 
-            <v-text-field
-              bg-color="surface-variant"
-              density="compact"
-              hide-details
-              placeholder="you@business.com"
-              rounded="pill"
-              variant="outlined"
-            >
-              <template #append-inner>
-                <v-btn class="text-none" color="secondary" size="small" variant="flat">{{ $t('footer.subscribe') }}</v-btn>
-              </template>
-            </v-text-field>
-          </v-col>
-        </v-row>
-      </v-container>
+        <div class="footer-bottom">
+          <span>{{ t('footer.copyright', { year: new Date().getFullYear() }) }}</span>
 
-      <v-divider />
-
-      <v-container class="d-flex flex-wrap align-center justify-space-between py-4" max-width="1200">
-        <span class="text-caption text-medium-emphasis">{{ $t('footer.copyright', { year: new Date().getFullYear() }) }}</span>
-
-        <div class="d-flex ga-4">
-          <router-link class="text-caption text-medium-emphasis text-decoration-none" to="/privacy">{{ $t('footer.privacy') }}</router-link>
-          <router-link class="text-caption text-medium-emphasis text-decoration-none" to="/terms">{{ $t('footer.terms') }}</router-link>
-          <router-link class="text-caption text-medium-emphasis text-decoration-none" to="/cookies">{{ $t('footer.cookies') }}</router-link>
-          <router-link class="text-caption text-medium-emphasis text-decoration-none" to="/support">{{ $t('footer.support') }}</router-link>
+          <nav :aria-label="t('legal.navigation')" class="footer-legal">
+            <router-link v-for="page in ['privacy', 'terms', 'cookies']" :key="page" :to="`/${page}`">{{ t(`footer.${page}`) }}</router-link>
+          </nav>
         </div>
       </v-container>
     </v-footer>
@@ -173,26 +186,33 @@
 </template>
 
 <script lang="ts" setup>
-  import { computed, ref } from 'vue'
+  import { computed, ref, watch, watchEffect } from 'vue'
   import { useI18n } from 'vue-i18n'
-  import router from './router'
+  import { useRoute } from 'vue-router'
+  import { appStoreUrl, playStoreUrl } from '@/constants/links'
 
   const { t, locale } = useI18n()
+  const route = useRoute()
   const drawer = ref(false)
 
-  function setLocale (lang: string) {
-    locale.value = lang
+  function setLocale (language: string) {
+    locale.value = language
   }
 
   const navLinks = computed(() => [
-    { label: t('nav.features'), href: '#features', icon: 'mdi-star-outline' },
-    { label: t('nav.howItWorks'), href: '#how-it-works', icon: 'mdi-play-circle-outline' },
-    { label: t('nav.pricing'), href: '#pricing', icon: 'mdi-tag-outline' },
+    { label: t('nav.features'), to: '/#features', icon: 'mdi-star-outline' },
+    { label: t('nav.howItWorks'), to: '/#how-it-works', icon: 'mdi-play-circle-outline' },
+    { label: t('nav.pricing'), to: '/#pricing', icon: 'mdi-tag-outline' },
+    { label: t('footer.support'), to: '/support', icon: 'mdi-message-text-outline' },
   ])
-</script>
 
-<style>
-html {
-  scroll-behavior: smooth;
-}
-</style>
+  watch(() => route.fullPath, () => {
+    drawer.value = false
+  })
+
+  watchEffect(() => {
+    document.documentElement.lang = locale.value.startsWith('es') ? 'es-MX' : 'en-US'
+    const titleKey = route.path === '/' ? 'hero.title' : `${route.path.slice(1)}.title`
+    document.title = `${t(titleKey)} | Dobify`
+  })
+</script>

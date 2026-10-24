@@ -61,6 +61,27 @@ npm run dev
 npm run build
 ```
 
+### Pricing API configuration
+
+- **Development:** the app requests `/api/prices`. Vite proxies this to
+  `http://localhost/api/prices`. No environment file is required. For a custom
+  development endpoint, copy `.env.example` to `.env.development.local` and edit
+  `VITE_PRICES_URL`.
+- **Production:** Vite automatically loads `.env.production`,
+  which sets `VITE_PRICES_URL=https://dobify.mx/api/prices`.
+- **GitHub Actions:** the build uses the same production URL by default. Set the
+  repository **Actions variable** `VITE_PRICES_URL` to override it. It is a public
+  URL, not a secret.
+
+Vite embeds `VITE_*` values in the JavaScript bundle **at build time**. `.env.example`
+is only a template, and copying an environment file to the deployed `dist` directory
+does not reconfigure it. Rebuild and redeploy after changing the production URL.
+An environment variable supplied to `npm run build` takes precedence over the file.
+
+The prices endpoint must return the plan JSON without authentication for public
+visitors. Never include an API token in a `VITE_*` variable. If the marketing site
+is hosted on a different origin, the API must also allow that origin through CORS.
+
 ## 🧪 Available Scripts
 
 - `npm run dev`

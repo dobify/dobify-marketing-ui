@@ -1,5 +1,10 @@
 {
   "nav": {
+    "skipContent": "Ir al contenido",
+    "mainNavigation": "Navegación principal",
+    "language": "Cambiar idioma",
+    "openMenu": "Abrir navegación",
+    "closeMenu": "Cerrar navegación",
     "features": "Funciones",
     "howItWorks": "Cómo funciona",
     "pricing": "Precios",
@@ -10,7 +15,21 @@
   "hero": {
     "badge": "$0 MXN en lectores de tarjetas",
     "title": "Tu celular ya es tu terminal de cobro",
-    "subtitle": "Dobify convierte cualquier smartphone en punto de venta con Tap to Pay. Sin hardware, sin cables, sin baterías que se acaban.",
+    "subtitle": "Cobra sin contacto, organiza tus ventas y mantén tu negocio en marcha — desde un smartphone compatible.",
+    "benefits": {
+      "reader": "Sin lector adicional",
+      "receipts": "Tickets digitales",
+      "business": "Tu negocio, organizado"
+    },
+    "preview": {
+      "title": "Vista previa de un cobro",
+      "tap": "Tap to Pay",
+      "hint": "Pagos sin contacto, directo en tu celular.",
+      "receipt": "Ticket digital",
+      "paperless": "Menos papel. Menos equipo.",
+      "noReader": "Tu celular. Tu terminal.",
+      "disclaimer": "Vista ilustrativa. La disponibilidad de Tap to Pay depende de tu dispositivo. Aplican las tarifas del plan y por transacción."
+    },
     "cta": "Descargar gratis",
     "ctaSecondary": "Ver cómo funciona",
     "rating": "4.8 estrellas de 2,400+ comercios",
@@ -21,8 +40,21 @@
   },
   "comparison": {
     "title": "¿Por qué pagar por lectores si tu celular ya cobra?",
+    "badge": "Menos equipo. Más libertad.",
+    "subtitle": "Compara un sistema tradicional con un punto de venta que cabe en tu bolsillo.",
+    "setup": "Tu equipo",
+    "cta": "Empezar con Dobify",
+    "savingsNote": "Ahorro solo en el lector. Aplican las tarifas del plan y por transacción. Tap to Pay requiere un dispositivo compatible.",
+    "categories": {
+      "payments": "Aceptar pagos",
+      "receipts": "Enviar tickets",
+      "runningCosts": "Gastos de papel",
+      "connections": "Conectar dispositivos",
+      "equipment": "Llevar equipo"
+    },
     "without": {
       "title": "Sin Dobify",
+      "subtitle": "Un sistema con equipo adicional",
       "item1": "Lector de tarjetas: $300 - $2,500 MXN",
       "item2": "Impresora térmica: $800 - $2,000 MXN",
       "item3": "Rollos de papel: $50 - $150 MXN/mes",
@@ -31,11 +63,12 @@
     },
     "with": {
       "title": "Con Dobify",
+      "subtitle": "Una app. Tu celular.",
       "item1": "Tap to Pay directo en tu celular",
       "item2": "Tickets digitales por WhatsApp",
       "item3": "Sin costos recurrentes de papel",
-      "item4": "Tu teléfono siempre funciona",
-      "item5": "Nada extra que perder"
+      "item4": "Sin lector externo que vincular o cargar",
+      "item5": "Sin equipo de cobro adicional que llevar"
     }
   },
   "platforms": {
@@ -78,6 +111,7 @@
   "howItWorks": {
     "sectionTitle": "Cómo funciona",
     "title": "Listo en tres pasos",
+    "subtitle": "Desde tu primer producto hasta tu primera venta, empieza en la app.",
     "step1": {
       "title": "Crea tu cuenta",
       "text": "Regístrate, agrega los datos de tu negocio e invita a tu equipo en minutos."
@@ -93,60 +127,60 @@
   },
   "pricing": {
     "sectionTitle": "Precios",
-    "title": "Precios claros en pesos mexicanos",
+    "title": "Precios claros",
     "subtitle": "Sin sorpresas. Sin letra chiquita. Cancela cuando quieras.",
     "mostPopular": "Más popular",
     "downloadCta": "Empezar",
+    "perMonth": "/mes",
+    "loading": "Cargando planes actuales…",
+    "errorTitle": "Los precios no están disponibles por el momento",
+    "errorText": "No pudimos cargar los planes actuales. Inténtalo de nuevo.",
+    "retry": "Reintentar",
+    "transactionFee": "por transacción",
+    "planLimits": "Límites del plan",
+    "included": "Funciones incluidas",
+    "coreIncluded": "Todas las funciones esenciales compartidas",
+    "allPlans": "Incluido en todos los planes",
+    "unlimited": "Sin límite",
+    "days": "{count} días",
+    "singleSession": "Una sesión activa a la vez.",
+    "limits": {
+      "monthly_sales_amount": "Ventas al mes",
+      "products": "Productos",
+      "users": "Usuarios",
+      "locations": "Sucursales",
+      "analytics_history_days": "Historial de ventas",
+      "transactions_per_month": "Transacciones/mes"
+    },
+    "features": {
+      "pos": "Punto de venta",
+      "sync": "Sincronización en la nube",
+      "tap_to_pay": "Tap to Pay",
+      "digital_receipts": "Tickets digitales",
+      "simple_stock": "Control básico de stock",
+      "reports": "Reportes de ventas",
+      "inventory": "Gestión de inventario",
+      "expenses": "Control de gastos",
+      "shift_audits": "Auditorías de turno",
+      "multi_user": "Múltiples usuarios",
+      "multi_location": "Múltiples sucursales",
+      "advanced_inventory": "Inventario avanzado",
+      "api_access": "Acceso a la API"
+    },
     "free": {
-      "name": "Gratis",
-      "price": "$0",
-      "period": "/mes",
       "target": "Para emprendedores y pop-ups",
-      "item1": "Hasta $15,000 MXN en ventas/mes",
-      "item2": "Hasta 30 productos en catálogo",
-      "item3": "Historial de ventas: 7 días",
-      "item4": "1 usuario / 1 sucursal",
-      "item5": "Tap to Pay incluido",
-      "item6": "Tickets por WhatsApp/QR",
       "cta": "Empezar gratis"
     },
     "starter": {
-      "name": "Inicial",
-      "price": "$149",
-      "period": "/mes",
       "target": "Para comerciantes establecidos",
-      "item1": "Ventas ilimitadas",
-      "item2": "Catálogo ilimitado",
-      "item3": "Reportes e historial completo",
-      "item4": "1 usuario / 1 sucursal",
-      "item5": "Tap to Pay incluido",
-      "item6": "Tickets por WhatsApp/QR",
-      "cta": "Probar gratis"
+      "cta": "Empezar"
     },
     "pro": {
-      "name": "Pro",
-      "price": "$299",
-      "period": "/mes",
       "target": "Para negocios con empleados",
-      "item1": "Todo de Inicial, más:",
-      "item2": "Múltiples usuarios + permisos",
-      "item3": "Control de caja anti-robo",
-      "item4": "Módulo de gastos y egresos",
-      "item5": "Cortes X y Z por turno",
-      "item6": "Utilidad neta en tiempo real",
-      "cta": "Probar gratis"
+      "cta": "Empezar"
     },
     "enterprise": {
-      "name": "Empresarial",
-      "price": "$699+",
-      "period": "/mes",
       "target": "Para cadenas y multi-sucursal",
-      "item1": "Todo de Pro, más:",
-      "item2": "Múltiples sucursales",
-      "item3": "Control de inventario avanzado",
-      "item4": "Transferencias entre almacenes",
-      "item5": "Reportes consolidados",
-      "item6": "Soporte prioritario",
       "cta": "Contactar ventas"
     }
   },
@@ -170,6 +204,8 @@
     }
   },
   "faq": {
+    "subtitle": "Lo que necesitas saber antes de empezar. ¿Necesitas ayuda? Cuenta con nosotros.",
+    "contactCta": "Visitar soporte",
     "sectionTitle": "FAQ",
     "title": "Preguntas frecuentes",
     "q1": {
@@ -182,7 +218,7 @@
     },
     "q3": {
       "question": "¿Puedo manejar más de una sucursal?",
-      "answer": "Sí. Los planes Crecimiento y Empresarial soportan sucursales ilimitadas con reportes desglosados por tienda."
+      "answer": "Sí. El soporte para múltiples sucursales depende de tu plan. Consulta la sección de precios para ver los límites actuales."
     },
     "q4": {
       "question": "¿Hay prueba gratis?",
@@ -194,11 +230,15 @@
     }
   },
   "download": {
+    "appStore": "Descargar en App Store",
+    "googlePlay": "Disponible en Google Play",
     "title": "¿Listo para empezar a vender?",
     "subtitle": "Descarga ahora — gratis para una sucursal, siempre.",
     "note": "Sin tarjeta de crédito. Crea tu cuenta en la app."
   },
   "footer": {
+    "helpTitle": "Una mano para tu negocio",
+    "helpText": "¿Tienes dudas sobre Dobify? Encuentra respuestas o habla con nuestro equipo.",
     "tagline": "Punto de venta que sigue vendiendo, online u offline. Hecho para equipos de retail modernos.",
     "product": "Producto",
     "platforms": "Plataformas",
@@ -212,6 +252,8 @@
     "support": "Soporte"
   },
   "legal": {
+    "navigation": "Información legal",
+    "contents": "En esta página",
     "backToHome": "Volver al inicio"
   },
   "privacy": {
@@ -375,6 +417,23 @@
     }
   },
   "support": {
+    "channels": {
+      "email": {
+        "title": "Habla con nuestro equipo",
+        "text": "Envíanos tu pregunta y los detalles que necesitamos para ayudarte.",
+        "cta": "Enviar un correo"
+      },
+      "answers": {
+        "title": "Encuentra una respuesta",
+        "text": "Cuenta, dispositivos, pagos — empieza por las preguntas más frecuentes.",
+        "cta": "Ver respuestas"
+      },
+      "plans": {
+        "title": "Elige el plan adecuado",
+        "text": "Compara los precios, las funciones y los límites actuales para tu negocio.",
+        "cta": "Explorar planes"
+      }
+    },
     "title": "Soporte",
     "subtitle": "Estamos aquí para ayudarte a sacar el máximo provecho de Dobify.",
     "email": {
@@ -418,7 +477,7 @@
       "saturday": "Sábado",
       "sunday": "Domingo",
       "closed": "Cerrado",
-      "note": "Soporte prioritario disponible 24/7 para planes Crecimiento y Empresarial."
+      "note": "Todos los horarios están en hora estándar central (CST). Puedes enviarnos un correo en cualquier momento."
     }
   },
   "cookies": {

@@ -21,6 +21,8 @@ jobs:
         run: npm ci
 
       - name: Build
+        env:
+          VITE_PRICES_URL: ${{ vars.VITE_PRICES_URL || 'https://dobify.mx/api/prices' }}
         run: npm run build
 
       - name: Deploy to droplet
