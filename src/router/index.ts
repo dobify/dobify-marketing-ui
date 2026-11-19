@@ -52,4 +52,30 @@ const router = createRouter({
   },
 })
 
+router.afterEach((to, _from, failure) => {
+  if (failure) {
+    return
+  }
+
+  let canonical = document.head.querySelector<HTMLLinkElement>('link[rel="canonical"]')
+  const route = to.matched.at(-1)
+  if (!route) {
+    canonical?.remove()
+    return
+  }
+
+  // Use the route definition so query strings, hashes, and trailing slashes
+  // all point to the same URL listed in the sitemap.
+  const url = new URL(route.path, 'https://dobify.mx').href
+  if (!canonical) {
+    canonical = document.createElement('link')
+    canonical.rel = 'canonical'
+    document.head.append(canonical)
+  }
+  canonical.href = url
+
+  document.head.querySelector<HTMLMetaElement>('meta[property="og:url"]')?.setAttribute('content', url)
+  document.head.querySelector<HTMLMetaElement>('meta[name="twitter:url"]')?.setAttribute('content', url)
+})
+
 export default router
